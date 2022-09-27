@@ -75,7 +75,14 @@
     print_r($simple["a"]);
 
 
-
-
 	echo "<br><br><br><br><br>";
+
+	echo "<br><h3>Matriz 4x4 PHP random <hr> </h3>";
+
+	for ( $r = 0 ; $r < 4 ; $r++ ){		
+		for ($c = 0; $c < 4 ; $c ++){
+			$matriz[$c][$r] = rand(0,99);
+			echo "Matriz[$c][$r] = " . $matriz[$c][$r] . "<br>";
+		} 
+	}
 ?>

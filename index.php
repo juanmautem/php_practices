@@ -25,5 +25,7 @@
 
 	?>
 	<hr>
+	<?php require_once "arrays.php" ?>
 </body>
+
 </html>
