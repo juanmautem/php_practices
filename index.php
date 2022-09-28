@@ -15,6 +15,7 @@
 </head>
 <body>
 	<center><h1>Prácticas PHP <hr></h1></center>
+	<div style="display :none"> 
 	<?php 
 		echo "<button>El valor de I = " . $i . ";</button>";
 		echo "<p>El valor de cadena = " . $cadena . ";</p>";
@@ -22,10 +23,18 @@
 		echo "<p>El valor de vector = "; 
 		print_r($vector);
 		echo ";</p>";
-
 	?>
+	</div>
+	
 	<hr>
+	<div style="display :none">
 	<?php require_once "arrays.php" ?>
+		
+	</div>
+	<div style="display : block; border: 1px double darkred;">
+	<?php require_once "arrayFunctions.php" ?>
+		
+	</div>
 </body>
 
 </html>
