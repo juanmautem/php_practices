@@ -27,7 +27,7 @@
 	for($i=0;$i<4;$i++){
 		//echo "Nombre: " . $names[0][$i] . "; Edad : " . $names[1][$i]. "<br>";
 	}
-array_multisort($names[0],
+	array_multisort($names[0],
                 $names[1], SORT_NUMERIC, SORT_ASC);
 	echo "<h4>ORDENADOS, col Nombres SORT_STRING, col edades SORT_NUMERIC <br><h4>";
 

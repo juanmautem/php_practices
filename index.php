@@ -28,13 +28,53 @@
 	
 	<hr>
 	<div style="display :none">
-	<?php require_once "arrays.php" ?>
+	<?php require_once "arrays.php"; ?>
 		
 	</div>
-	<div style="display : block; border: 1px double darkred;">
-	<?php require_once "arrayFunctions.php" ?>
+	<div style="display : none; ">
+	<?php require_once "arrayFunctions.php"; ?>
 		
 	</div>
+
+	<div style ="display:none; ">
+		<center><h2>Listas PHP <hr></h2></center>
+		<p>
+			Al igual que <strong>array()</strong>, no es realmente una función, es un constructor del lenguaje.<strong> list()</strong> se utiliza para asignar una lista de variables en una sola operación.
+		</p>
+		<?php require_once "arrayList.php"; ?>
+
+	</div>
+
+	<div style ="display:block; border: 2px inset darkred; ">
+		<center><h2>Listas Enlazadas PHP  <hr></h2></center>
+		
+		<?php require_once "phpList.php"; 
+
+			$lista = new uniList('Padre');
+			echo "<br> Lista con display():";
+			$lista->display();
+			echo "<br> Lista con print_r:";
+			print_r($lista);
+
+			$lista->newNodo('Padre','Hijo 1');
+			$lista->newNodo('Hijo 1','Hijo 2');
+			$lista->newNodo('Hijo 2','Hijo 4');
+			$lista->newNodo('Hijo 4','Hijo 3');
+			$lista->newNodo('Hijo 3','Hijo 5');
+
+
+			echo "<br> Lista con display():";
+			$lista->display();
+
+			echo "<br> Eliminar nodo('Hijo 4'):";
+			$lista->delete('Hijo 4');
+			$lista->display();
+
+
+		?>
+
+	</div>
+
 </body>
 
 </html>
