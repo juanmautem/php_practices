@@ -26,7 +26,6 @@
 	?>
 	</div>
 	
-	<hr>
 	<div style="display :none">
 	<?php require_once "arrays.php"; ?>
 		
@@ -45,7 +44,7 @@
 
 	</div>
 
-	<div style ="display:block; border: 2px inset darkred; ">
+	<div style ="display:none; border: 2px inset darkred; ">
 		<center><h2>Listas Enlazadas PHP  <hr></h2></center>
 		
 		<?php require_once "phpList.php"; 
@@ -73,6 +72,14 @@
 
 		?>
 
+	</div>
+
+	<div style ="display:block; border: 2px inset darkred; ">
+		<?php require_once "phpPilas.php"; ?>
+	</div>
+
+	<div style ="display:block; border: 2px inset darkred; ">
+		<?php require_once "phpColas.php"; ?>
 	</div>
 
 </body>
